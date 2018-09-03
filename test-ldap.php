@@ -28,7 +28,7 @@
     $ldapuser = "uid=sampleuser,o=Quezon City University,c=PH";
     $ldappass = "";
     $ldapdn = "o=Quezon City University,c=PH";
-    $filter = "(employeetype=fac)";
+    $filter = "(employeetype=janitor)";
     $attronly = 0;
     $sizelimit = 0;
     $timelimit = 30;
