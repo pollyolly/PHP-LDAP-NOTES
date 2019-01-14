@@ -7,6 +7,9 @@
     ini_set('display_errors',1);
     $ldaphost = 'ldap://10.xx.xx.xx';
     $ldapport = 389;
+      /* Using ldaps connection */
+//    $ldaphost = 'ldaps://10.xx.xx.xx';
+//    $ldapport = 636;
 /*
     $ldappass =  '';
     $ldapdn = "uid=sampleuser,o=Quezon City University,c=PH";
@@ -44,6 +47,8 @@
         $data = ldap_get_entries($ldapconn, $results);
         echo "No of records:".count($data);
     } else {
-        echo "Account Not Exists \n";
+	echo "But you can't bind the details you've provided. \n";
+        echo "Please check your firewall, IP Routing and if the account really exists. \n";
+        echo "Thank you!";	
     }
 ?>
