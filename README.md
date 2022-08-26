@@ -20,6 +20,12 @@ if(ldap_bind($ldapconn, $ldapdn, $ldappass)){
 exit;
 ?>
 ```
+PHP LDAP extension
+Nginx: /etc/php/7.4/fpm/php.ini
+Apache: /etc/php/7.4/apache/php.ini
+```
+extension=ldap
+```
 LDAP /etc/ldap/ldap.conf
 ```
 PORT 1636
