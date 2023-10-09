@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=bhQ5qssGdLI
 
 ### Test LDAP Account Authentication
 PHP Script
-```
+```php
 <?php
 
 $ldaphost = 'ldaps://10.XX.XX.XXX:1636';
@@ -21,7 +21,7 @@ exit;
 ?>
 ```
 PHP LDAP extension
-```
+```vim
 Nginx: /etc/php/7.4/fpm/php.ini
 Apache: /etc/php/7.4/apache/php.ini
 
